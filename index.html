@@ -4,63 +4,41 @@
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
-        <style>
-
-           *{
-                /* O asterisco aplica o css em TUDO!!!
-                    Usamos ele para fazer o reset (limpar)
-                   o css padrão do navegador e aplicar um único. 
-                */
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box; /* Define o tamanho do elemento */
-                line-height: 1.5;
-                font-family: Arial, Helvetica, sans-serif
-           } 
-
-           p{
-            font-size: 14px;
-            color: rgb(88, 86, 86);
-            text-align: center;
-           }
-
-           h1, h2, h3, h4, h5, h6 {
-            font-weight: bold;
-            /* Usar !important como último recurso */
-            color: blue;
-            margin-bottom: 20px;
-            text-align: center;
-           }
-
-           .container{
-                padding-left: 20%;
-                padding-right: 20%;
-           }
-
-           .card{
-            border: 1px #cccccc solid;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 10px auto;
-            box-shadow: 0 4px 8px #353535;
-           }
-        </style>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/text.css">
+        <link rel="stylesheet" href="css/colors.css">
     </head>
 
+    <style>
+
+    </style>
+
     <body>
+        <header>
+            <!-- podemos utilizar as variaveis no CSS inline -->
+            <h1 style="color: var(--secondary color)">Bem vindo ao meu SITE!</h1>
+        </header>  
+
         <div class="container">
             <h1>
                 Fatec Jahu - CSS inline
             </h1>   
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati delectus corporis magnam accusantium natus, accusamus laborum ad doloremque illo dolorum voluptatibus qui voluptatum? Id quisquam cum pariatur sunt corporis quae?</p>
+            <p>Lorem ipsum <span class="text-bold text-green">dolor, sit amet consectetur adipisicing elit.</span> Obcaecati delectus corporis magnam accusantium natus, accusamus laborum ad doloremque illo dolorum voluptatibus qui voluptatum? Id quisquam cum pariatur sunt corporis quae?</p>
             
             <div class="card tamanho-50">
-                asdksdhnfkldfgj dlfkgjdfklgjdflkg jdsgç fdsjg hdfskçgj hdfskgjh nlçj ash ljaj dasklj alks fjals fkasf
+                <span class="text-30">asdksdhnfkldfgj</span> dlfkgjdfklgjdflkg jdsgç fdsjg hdfskçg hdfskgjh nlçj ash ljaj dasklj alks fjals fkasf
                 dfkjsdfgokjgldfndlfgkdfjgsdfoldfjgpdfjgçdfgjdfçgf
-                ndsfjsdkçfjsdçksdjfkçsdjsdfçklsdfjdskjlsdfksçldfksdfçklfhsldfhnsdflgjsfdgjldfgdfljasldk
+                ndsfjsdkçfjsdçksdjfkçsdjsdfçklsdfjdskjls<span class="text-30">brunoisgay</span>dfksçldfksdfçklfhsldfhnsdflgjsfdgjldfgdfljasldk
                 asksdfnlksdfgjfdklgjhdfgjdfdfklgjdfglkpidfgjkp
+
+                <button class="button" type="button">PASSE O MOUSE</button>
             </div>
-        </div>        
+        </div>         
+        
+        <footer>
+            <p>&copy; 2024 Fatec Jahu. Todos os direitos reservados.</p>
+            <p>Desenvolvido por: <b>Cainã Wellington Bertolini</b></p>
+        </footer>
     </body>
 
 </html>
